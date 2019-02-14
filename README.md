@@ -8,10 +8,10 @@
 
 tutorial: 
 
-https://coder-coder.com/gulp-tutorial-beginners/ 
-https://andy6804tw.github.io/2018/01/23/Gulp-tutorial/
-https://abgne.tw/web/gulp/gulp-tuts-install-gulp-js.html
-https://css-tricks.com/gulp-for-beginners/
+- https://coder-coder.com/gulp-tutorial-beginners/ 
+- https://andy6804tw.github.io/2018/01/23/Gulp-tutorial/
+- https://abgne.tw/web/gulp/gulp-tuts-install-gulp-js.html
+- https://css-tricks.com/gulp-for-beginners/
 
 
 
