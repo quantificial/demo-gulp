@@ -7,10 +7,13 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var concat = require('gulp-concat');
 var del = require('del');
+var imagemin = require('gulp-imagemin');
+
 var jsFilter = filter('**/*.js', {restore: true});
 var cssFilter = filter('**/*.css', {restore: true});
+var browserSync = require('browser-sync').create();
 
-
+// testing hello
 gulp.task('hello', function() {
     console.log("hello...");
 });
@@ -26,8 +29,8 @@ gulp.task('sass', function(){
       }))              
   });
 
-var browserSync = require('browser-sync').create();
 
+// create browser
 gulp.task('browserSync', function() {
     browserSync.init({
     server: {
@@ -75,3 +78,17 @@ gulp.task('watch', gulp.parallel('browserSync','sass',function(){
 }));
 
 
+gulp.task('imagemin', function() {
+    var img_src = 'app/images/**/*', img_dest = 'dist/images';
+ 
+    gulp.src(img_src)
+    .pipe(changed(img_dest))
+    .pipe(imagemin())
+    .pipe(gulp.dest(img_dest));
+ });
+
+
+/** default task */
+gulp.task('default', function() {
+    console.log('gulp js is running');
+ });

@@ -1,5 +1,10 @@
 
-Gulp is "build tools"
+## Gulp is "build tools" for front end application
+
+- monitor change and refresh browser
+- convert scss to css
+- minify javascript program
+- combine javascript program
 
 tutorial: 
 
